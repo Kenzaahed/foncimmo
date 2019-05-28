@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  #resources :goods
+  #resources :pages
+
   get 'about', to: 'pages#about', as: :about
   get 'contact', to: 'pages#contact', as: :contact
   get 'goods', to: 'goods#index'
