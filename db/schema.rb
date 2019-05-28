@@ -10,23 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_28_144746) do
+ActiveRecord::Schema.define(version: 2019_05_28_170714) do
 
   create_table "goods", force: :cascade do |t|
-    t.string "title"
-    t.string "string"
     t.string "type_of_good"
-    t.string "description_good"
+    t.text "title"
+    t.text "description_good"
+    t.integer "price"
+    t.integer "owner_id_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["owner_id_id"], name: "index_goods_on_owner_id_id"
   end
 
   create_table "owners", force: :cascade do |t|
     t.string "first_name"
-    t.string "string"
     t.string "last_name"
+    t.integer "good_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["good_id"], name: "index_owners_on_good_id"
   end
 
 end
