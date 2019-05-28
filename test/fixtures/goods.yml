@@ -1,17 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  string: MyString
   type_of_good: MyString
-  string: MyString
-  description_good: MyString
-  string: MyString
+  title: MyText
+  description_good: MyText
+  price: 1
+  owner_id: one
 
 two:
-  title: MyString
-  string: MyString
   type_of_good: MyString
-  string: MyString
-  description_good: MyString
-  string: MyString
+  title: MyText
+  description_good: MyText
+  price: 1
+  owner_id: two
