@@ -2,19 +2,19 @@ class GoodsController < ApplicationController
   #before_action :set_good, only: [:show, :edit, :update, :destroy]
   def index
     #fetch in from db
-    #@goods = Good.all
+    @goods = Good.all
   end
 
   def show
-    #@good = Good.find(params[:id])
+    @good = Good.find(params[:id])
   end
 
   def new
-    #@good = Good.new
+    @good = Good.new
   end
 
   def create
-    #Good.create(params[:good])
+    Good.create(params[:good])
   end
 
   def edit
