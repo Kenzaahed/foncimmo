@@ -1,8 +1,8 @@
 class GoodsController < ApplicationController
-  before_action :set_good, only: [:show, :edit, :update, :destroy]
+  #before_action :set_good, only: [:show, :edit, :update, :destroy]
   def index
     #fetch in from db
-    @goods = Good.all
+    #@goods = Good.all
   end
 
   def show
@@ -10,11 +10,11 @@ class GoodsController < ApplicationController
   end
 
   def new
-    @good = Good.new
+    #@good = Good.new
   end
 
   def create
-    Good.create(params[:good])
+    #Good.create(params[:good])
   end
 
   def edit
@@ -23,15 +23,15 @@ class GoodsController < ApplicationController
 
   def update
     #@good = Good.find(params[:id])
-    @good.update(params[:restaurant])
+    #@good.update(params[:restaurant])
   end
 
   def destroy
     #@good = Good.find(params[:id])
-    @good.destroy
+    #@good.destroy
     #redirect_to goods_path
   end
 
-  def set_good
-  end
+  #def set_good
+  #end
 end
