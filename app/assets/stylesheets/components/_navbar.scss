@@ -1,0 +1,12 @@
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  color: red;
+}
+
+.nav-item {
+  flex-grow: 1; /* default 0 */
+  color: red;
+}

@@ -1,0 +1,34 @@
+<!-- navbar deskop -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+
+  <a class="navbar-brand" href="#">FONCIMMO</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="col-md-4">
+            <li class="nav-item active">
+              <%= link_to "Notre agence", pages_about_path  %>
+            </li>
+          </div>
+
+          <div class="col-md-4">
+            <li class="nav-item">
+               <%= link_to "Nos biens", goods_path, class: "navbar-wagon-item navbar-wagon-link"  %>
+            </li>
+          </div>
+
+          <div class="col-md-4">
+            <li class="nav-item">
+               <%= link_to "Contact", pages_contact_path, class: "navbar-wagon-item navbar-wagon-link"  %>
+            </li>
+        </div>
+      </div>
+    </div>
+</nav>
+
+
