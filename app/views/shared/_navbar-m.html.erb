@@ -1,0 +1,42 @@
+<div class="navbar">
+  <div class="navbar-burger">
+    <section class="flyout flyout-closed">
+    <header class="flyout-header">
+      <div class="d-flex justify-content-between">
+        <a class="flyout-close icon-link" href="#">
+          <%= inline_svg 'burger.svg', class: 'black-svg' %>
+        </a>
+      </div>
+    </header>
+
+    <div class="flyout-links">
+      <%= link_to root_path do %>
+        <span>View Your Events</span>
+      <% end %>
+      <%= link_to destroy_user_session_path, method: :delete do %>
+        <%= t(".sign_out", default: "Log out") %>
+      <% end %>
+    </div>
+
+    <div class="flyout-shadow flyout-close"></div>
+    </section>
+
+    <a class="flyout-open navbar-burger" href="#">
+      <%= inline_svg 'burger.svg', class: 'white-svg' %>
+    </a>
+  </div>
+
+  <div class="navbar-center">
+    <div>
+      <%= content_for(:home) %>
+    </div>
+
+    <div class="navbar-logo">
+      <%= content_for(:action) %>
+    </div>
+  </div>
+
+  <div class="navbar-timer" >
+    <span id="timer-navbar"></span>
+  </div>
+</div>

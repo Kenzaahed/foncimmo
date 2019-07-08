@@ -1,31 +1,35 @@
 <!-- navbar deskop -->
 
 <nav class="navbar navbar-expand-lg navbar-light">
-
-  <div class="container-fluid">
-
- <!-- navbar Logo -->
-    <div class="col-md-6">
-      <div class="nav-logo">
+<!-- navbar Logo -->
+  <div class="container">
+    <div class="navbar-logo">
+    <div class="row ">
+      <div class= "col">
         <%=  link_to "FONCIMMO" , root_path, class: " navbar-wagon-item navbar-wagon-link" %>
       </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    </div>
     </div>
 
-  <!-- navbar Logo -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+  <!-- navbar choices -->
+    <div class="row ">
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <div class="col-md-4">
-              <%= link_to "Notre agence", pages_about_path, class: " navbar-wagon-item navbar-wagon-link"  %>
-          </div>
-          <div class="col-md-4">
-               <%= link_to "Nos biens", goods_path, class: "navbar-wagon-item navbar-wagon-link"  %>
-          </div>
-          <div class="col-md-4">
-               <%= link_to "Contact", pages_contact_path, class: "navbar-wagon-item navbar-wagon-link"  %>
-          </div>
+        <div class="col-6 ">
+          <%= link_to "Notre agence", pages_about_path, class: " navbar-wagon-item navbar-wagon-link"  %>
+        </div>
+        <div class="col-6 ">
+          <%= link_to "Nos biens", goods_path, class: "navbar-wagon-item navbar-wagon-link"  %>
+        </div>
+        <div class="col">
+          <%= link_to "Contact", pages_contact_path, class: "navbar-wagon-item navbar-wagon-link"  %>
+        </div>
       </div>
+    </div>
   </div>
 </nav>
 
